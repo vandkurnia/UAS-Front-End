@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import Nav from './components/home/Navbar';
+import Header from './components/home/Header';
+import Content from './components/home/Content';
+import Content2 from './components/home/Content2';
+import Footer from './components/Kelompok Tani/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Nav />
+    <Header />
+    <br></br>
+    <p className='color fs-4 fw-bold text-center'>Tanpa Petani Kita Tidak Bisa Makan Nasi dan Sayur</p>
+    <Content />
+    <Content2 />
+    <Footer />
     </div>
   );
 }
